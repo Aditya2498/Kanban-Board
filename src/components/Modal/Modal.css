@@ -76,5 +76,24 @@
 @media screen and (max-width:460px) {
     .modal_container{
         width: 80%;
+        top: 50px;
+    }
+    .form_box input{
+        width: 80%;
+    }
+    .form_box textarea{
+        width: 80%;
+    }
+}
+@media screen and (max-width:760px) {
+    .modal_container{
+        width: 80%;
+        top: 50px;
+    }
+    .form_box input{
+        width: 80%;
+    }
+    .form_box textarea{
+        width: 80%;
     }
 }

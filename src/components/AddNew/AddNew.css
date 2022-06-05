@@ -19,10 +19,10 @@
 
 @media screen and (max-width:460px) {
         .addnew_container{
-            right: 40px;
+            right: 20px;
             height: 65px;
             width: 65px;
-            bottom: 150px;
+            bottom: 250px;
         }
         .addnew_icon{
             height: 35px;

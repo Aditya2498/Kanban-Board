@@ -19,5 +19,6 @@
   @media screen and (max-width:460px) {
     .task_container{
       overflow: hidden;
+      width: 80px;
     }
   }

@@ -1,0 +1,13 @@
+.task_container{
+    border: 1px solid lightgrey;
+    background-color: #ffff;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  .task_title{
+    margin: 10px;
+  }
+  .task_description{
+    margin: 5px;
+  }

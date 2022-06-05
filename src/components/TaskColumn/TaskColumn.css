@@ -1,0 +1,20 @@
+.taskcolumn_container{
+  margin: 6px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  background: #dedede;
+}
+.taskcolumn_title{
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.taskcolumn_tasklist{
+  padding: 8px;
+  flex-grow: 1;
+  min-height: 100px;
+}

@@ -1,0 +1,30 @@
+.addnew_container{
+    color: #ffff;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    cursor: pointer;
+    right:60px;
+    background-color: #01579b;
+}
+.addnew_icon{
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (max-width:460px) {
+        .addnew_container{
+            right: 40px;
+            height: 45px;
+            width: 45px;
+        }
+        .addnew_icon{
+            height: 25px;
+            width: 25px;
+        }
+}

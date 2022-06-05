@@ -21,13 +21,24 @@ const Modal = ({closeModal}) => {
     const handleAddNewTask = async (e)=>{
         const form = formRef.current;
         let id = uuid();
-        let image64 = await imageConverter(form['taskImage'].files[0]);
-        let formData = {
-            [id]:{ 
-                taskIds:id, 
-                taskName:form['taskName'].value,
-                taskDescription:form['taskDescription'].value,
-                taskImage:image64
+        let formData;
+        if(form['taskImage'].files[0]){
+            let image64 = await imageConverter(form['taskImage'].files[0]);
+             formData = {
+                [id]:{ 
+                    taskIds:id, 
+                    taskName:form['taskName'].value,
+                    taskDescription:form['taskDescription'].value,
+                    taskImage:image64
+                }
+        }}
+        else{
+             formData = {
+                [id]:{ 
+                    taskIds:id, 
+                    taskName:form['taskName'].value,
+                    taskDescription:form['taskDescription'].value,
+                }
             }
         }
         let existingTasks = window.localStorage.getItem('taskObj');

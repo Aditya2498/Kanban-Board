@@ -135,7 +135,6 @@ const TaskBoard = () => {
               
             })}
             {provided.placeholder}
-
           </div>
         )}
        </Droppable>

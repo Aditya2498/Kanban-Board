@@ -1,19 +1,14 @@
 import React from 'react';
 import Task from '../Task/Task';
 import './TaskColumn.css';
-import { Droppable, Draggable } from "react-beautiful-dnd";
+import { Droppable} from "react-beautiful-dnd";
 
 
 const TaskColumn = ({tasks,column,index}) => {
   
   return (
-    <Draggable draggableId={column.id} index={index} type={'column'}>
-     {(provided)=>(
        <div 
          className='taskcolumn_container'
-         ref={provided.innerRef}
-         {...provided.draggableProps}
-         {...provided.dragHandleProps}
        >
          <h4 className='taskcolumn_title'>
            {column.title}
@@ -38,8 +33,7 @@ const TaskColumn = ({tasks,column,index}) => {
            </Droppable>
          
        </div>
-     )}
-   </Draggable>)
+   )
 }
 
 export default TaskColumn

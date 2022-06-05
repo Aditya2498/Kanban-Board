@@ -16,9 +16,6 @@ const Modal = ({closeModal}) => {
      reader.onerror = error => reject(error);
      reader.readAsDataURL(image);
         })
-        // console.log(image);
-        // const imageData = reader.readAsDataURL(image.file[0]);
-        // console.log(imageData);
     }
 
     const handleAddNewTask = async (e)=>{
@@ -60,8 +57,6 @@ const Modal = ({closeModal}) => {
                 <div>
                     <p>Task Description:</p>
                     <textarea placeholder='Add Description' name='taskDescription'autoComplete='off'/>
-                </div>
-                <div>
                     <p>Task Images:</p>
                     <input type='file' name='taskImage' alt='addImage' accept='image/*'/>
                 </div>

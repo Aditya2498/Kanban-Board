@@ -11,3 +11,7 @@
   .task_description{
     margin: 5px;
   }
+  .task_image{
+    height: 40%;
+    width: 100%;
+  }

@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-      <TaskBoard/>
       <NavBar/>
+      <TaskBoard/>
     </>
   );
 }

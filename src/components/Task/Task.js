@@ -15,16 +15,16 @@ const Task = ({task,index}) => {
           {...provided.draggableProps}
           isDragging={snapshot.isDragging}
           >
+            <div>
+              {task.taskImage ?
+              <img src={task.taskImage} alt='img' className='task_image'/>
+              :<></>}
+            </div>
             <h4 className='task_title'>
               {task.taskName}
             </h4>
             <div className='task_description'>
               {task.taskDescription}
-            </div>
-            <div>
-              {task.taskImage ?
-              <img src={task.taskImage} alt='img' height={30} width={30}/>
-              :<></>}
             </div>
         </div>
       )}

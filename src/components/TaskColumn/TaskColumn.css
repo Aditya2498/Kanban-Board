@@ -21,6 +21,9 @@
 
 @media  screen and (max-width:460px) {
     .taskcolumn_container{
-      width: 230px;
+      width: 25%;
+    }
+    .taskcolumn_title{
+      font-size: 16px;
     }
 }

@@ -131,8 +131,7 @@ const TaskBoard = () => {
                   />
                 );
               }
-
-              
+     
             })}
             {provided.placeholder}
           </div>

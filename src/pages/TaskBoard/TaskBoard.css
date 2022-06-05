@@ -14,7 +14,7 @@
 
 @media  screen and (max-width:460px) {
         .taskboard_layout{
-            flex-direction: column;
+            flex-direction: row;
             margin-top:20px;
         }
 }
